@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
+import LogoutButton from "@/components/logoutButton"
 export default function Home() {
   return (
-    <h1>Hello</h1>
+    <>
+      <LogoutButton />
+      <h1>Hello</h1>
+    </>
   )
 }
