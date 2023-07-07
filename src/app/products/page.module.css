@@ -2,3 +2,63 @@
     padding: 50px;
     color: #fff;
 }
+.imgtag{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+}
+.product_container{
+    padding: 0 10em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15px;    
+}
+.prod_item{
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+    color: #fff;
+}
+.card{
+    width: 100%;
+}
+.price{
+    color: rgb(199, 199, 199);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+.name{
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+.addtocart{
+    border: none;
+    color: #fff;
+    padding: 4px 8px;
+    background-color: green;
+    border-radius: 2px;
+    margin: 0 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartbtn{
+    cursor: pointer;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.bottom{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
