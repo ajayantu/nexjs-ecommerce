@@ -21,6 +21,9 @@ const Login = () => {
       console.log(res.data);
       if(res.data.success===true){
         router.push("/products")
+        setTimeout(()=>{
+          window.location.reload()
+        },500)
       }
       else{
         toast.error(res.data.message);

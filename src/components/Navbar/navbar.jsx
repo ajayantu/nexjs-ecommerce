@@ -1,5 +1,5 @@
+import NavUser from "../NavUser/navuser";
 import "./navbar.css";
-import LogoutButton from "@/components/logoutButton";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -28,10 +28,7 @@ const Navbar = () => {
               <Link href={"/products"}>
                 <li>Products</li>
               </Link>
-              <Link href={"/login"}>
-                <li>Login</li>
-              </Link>
-              <LogoutButton />
+              <NavUser />
             </ul>
             <div className="cart_container">
               <div className="cart">
