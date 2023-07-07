@@ -4,16 +4,17 @@ import axios from 'axios'
 import { useRouter } from 'next/navigation';
 import React from 'react'
 
-const logoutButton = () => {
+const logoutButton = (props) => {
     const router = useRouter()
     const handleLogout = async (e)=>{
         const res = await axios.get("/api/users/logout");
         console.log(res.data);
         if(res.data.success===true)
         {
-          setTimeout(()=>{
-            window.location.reload()
-          },500)
+          props.setLogin(false)
+          // setTimeout(()=>{
+          //   window.location.reload()
+          // },500)
           router.push("/login");
         }
     }

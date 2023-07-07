@@ -36,7 +36,7 @@ const NavUser = () => {
             :
             <>
                 <p className='username'>Welcome {user && user.username}</p>
-                <LogoutButton />
+                <LogoutButton setLogin={setIsLogin} />
             </>
         }
         
