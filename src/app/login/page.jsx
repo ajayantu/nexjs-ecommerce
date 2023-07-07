@@ -20,7 +20,7 @@ const Login = () => {
       const res = await axios.post("/api/users/login",user);
       console.log(res.data);
       if(res.data.success===true){
-        router.push("/")
+        router.push("/products")
       }
       else{
         toast.error(res.data.message);

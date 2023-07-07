@@ -1,0 +1,43 @@
+.navbar_container{
+
+}
+nav{
+    padding: 12px 5%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo svg{
+    width: 34px;
+    height: 34px;
+}
+.logo span{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+nav .right_section{
+    display: flex;
+    align-items: center;
+}
+nav .right_section .list_items{
+    display: flex;
+    align-items: center;
+}
+.list_items li{
+    list-style: none;
+    padding: 5px;
+}
+
+.cart svg{
+    width: 30px;
+    height: 30px;
+    display: flex;    
+}

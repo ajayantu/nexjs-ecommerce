@@ -8,7 +8,11 @@ const logoutButton = () => {
     const router = useRouter()
     const handleLogout = async (e)=>{
         const res = await axios.get("/api/users/logout");
-        router.push("/login");
+        console.log(res.data);
+        if(res.data.success===true)
+        {
+          router.push("/login");
+        }
     }
   return (
     <>
